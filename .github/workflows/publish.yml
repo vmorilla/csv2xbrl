@@ -12,6 +12,7 @@ jobs:
             node-version: "20"
         - run: npm ci
         - run: npx lerna run build
+        - run: npx lerna run test
         - uses: JS-DevTools/npm-publish@v3
           with:
             token: ${{ secrets.NPM_TOKEN }}
