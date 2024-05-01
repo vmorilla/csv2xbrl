@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"No tests implemented\" && exit 0",
+        "test": "echo \"No tests implemented\"",
         "build": "tsup src/index.ts --clean --minify"
     },
     "keywords": [],
