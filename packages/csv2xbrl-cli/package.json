@@ -19,7 +19,7 @@
     },
     "dependencies": {
         "commander": "^12.0.0",
-        "csv2xbrl": "^0.3.1",
+        "csv2xbrl": "file:../csv2xbrl",
         "install": "^0.13.0"
     }
 }
