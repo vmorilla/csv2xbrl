@@ -1,6 +1,6 @@
 {
     "name": "csv2xbrl",
-    "version": "0.1.0",
+    "version": "0.0.1",
     "description": "A script to conver xBRL-CSV files to xBRL-XML files",
     "files": [
         "dist",
