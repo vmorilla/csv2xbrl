@@ -1,23 +1,20 @@
-# CSV2XBRL
+# CSV2XBRL command
 <p>
     <img src="https://img.shields.io/badge/status-Work%20in%20Progress-orange" alt="Work in Progress" />
     <img src="https://img.shields.io/badge/license-MIT-purple.svg" alt="MIT license" />
-    <img src="https://github.com/vmorilla/csv2xbrl/actions/workflows/test.yml/badge.svg?branch=master" alt="tests" />
 </p>
 
-A library to convert XBRL-CSV files to XBRL-XML.
+A simple command to convert XBRL-CSV files to XBRL-XML. Based on the library with the same name.
 
-## Command line tool
-
-### Installation
+## Installation
 
 First, make sure you have Node.js and npm installed on your machine. Then, install the tool with npm:
 
 ```bash
-npm install -g csv2xbrl
+npm install -g csv2xbrl-cli
 ```
 
-### Usage
+## Usage
 
 You can use the tool from the command line as follows:
 
@@ -27,12 +24,12 @@ csv2xbrl [options] <jsonFile>...
 
 Replace <jsonFile>... with one or more paths to JSON files that you want to convert to XBRL.
 
-#### Options
+### Options
 
 - -z, --package <package>: Specify taxonomy package zip files to load. If you want to specify multiple files, separate them with commas.
 - -o, --output <output>: Specify the output file. If you specify - as the output file, the tool will write to standard output. If you don't specify an output file, the tool will use the same name as the input file, but with the .xbrl extension.
 
-#### Examples
+### Examples
 
 Convert a single JSON file and write the output to output.xbrl:
 
@@ -54,7 +51,8 @@ Convert a JSON file and write the result to standard output:
 csv2xbrl -o - input.json
 ```
 
-## API
+## Limitations
+See [limitations](../csv2xbrl/README.md#Limitations) in the CSV2XBRL package
 
 
 

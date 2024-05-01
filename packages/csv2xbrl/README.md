@@ -2,61 +2,19 @@
 <p>
     <img src="https://img.shields.io/badge/status-Work%20in%20Progress-orange" alt="Work in Progress" />
     <img src="https://img.shields.io/badge/license-MIT-purple.svg" alt="MIT license" />
-    <img src="https://github.com/vmorilla/csv2xbrl/actions/workflows/test.yml/badge.svg?branch=master" alt="tests" />
 </p>
 
 A library to convert XBRL-CSV files to XBRL-XML.
 
-## Command line tool
+## Installation
 
-### Installation
-
-First, make sure you have Node.js and npm installed on your machine. Then, install the tool with npm:
+First, make sure you have Node.js and npm installed on your machine. Then, install the package with npm or your favourite package manager:
 
 ```bash
-npm install -g csv2xbrl
+npm install csv2xbrl
 ```
 
-### Usage
-
-You can use the tool from the command line as follows:
-
-```bash
-csv2xbrl [options] <jsonFile>...
-```
-
-Replace <jsonFile>... with one or more paths to JSON files that you want to convert to XBRL.
-
-#### Options
-
-- -z, --package <package>: Specify taxonomy package zip files to load. If you want to specify multiple files, separate them with commas.
-- -o, --output <output>: Specify the output file. If you specify - as the output file, the tool will write to standard output. If you don't specify an output file, the tool will use the same name as the input file, but with the .xbrl extension.
-
-#### Examples
-
-Convert a single JSON file and write the output to output.xbrl:
-
-```bash
-csv2xbrl -o output.xbrl input.json
-```
-
-Convert multiple JSON files:
-
-```bash
-csv2xbrl input1.json input2.json input3.json
-```
-
-This will create input1.xbrl, input2.xbrl and input3.xbrl.
-
-Convert a JSON file and write the result to standard output:
-
-```bash
-csv2xbrl -o - input.json
-```
-
-## API
-
-
+## Usage
 
 
 ## Description of main classes
