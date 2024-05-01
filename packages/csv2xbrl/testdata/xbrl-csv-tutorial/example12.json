@@ -1,0 +1,62 @@
+{
+    "documentInfo": {
+        "documentType": "https://xbrl.org/2021/xbrl-csv",
+        "namespaces": {
+            "eg": "http://example.com/xbrl-csv/taxonomy",
+            "lei": "http://standards.iso.org/iso/17442",
+            "iso4217": "http://www.xbrl.org/2003/iso4217"
+        },
+        "taxonomy": [
+            "http://example.com/xbrl-csv/taxonomy.xsd"
+        ]
+    },
+    "tableTemplates": {
+        "credit_exposure_template": {
+            "columns": {
+                "firm_id": {},
+                "Cash_Credit": {
+                    "dimensions": {
+                        "eg:LoanType": "eg:CashCreditMember"
+                    }
+                },
+                "Term_Loan": {
+                    "dimensions": {
+                        "eg:LoanType": "eg:TermLoanMember"
+                    }
+                },
+                "Working_Capital_Loan": {
+                    "dimensions": {
+                        "eg:LoanType": "eg:WorkingCapitalLoanMember"
+                    }
+                },
+                "Non_Funded_Exposure": {
+                    "dimensions": {
+                        "eg:CreditExposureType": "eg:NonFundedMember"
+                    }
+                },
+                "Total_Exposure": {
+                    "dimensions": {
+                        "eg:CreditExposureType": "#none"
+                    }
+                }
+            },
+            "decimals": 0,
+            "dimensions": {
+                "eg:Firm": "$firm_id",
+                "concept": "eg:CreditExposure",
+                "eg:CreditExposureType": "eg:FundedMember"
+            }
+        }
+    },
+    "tables": {
+        "credit_exposure_table": {
+            "template": "credit_exposure_template",
+            "url": "table12-data-facts.csv"
+        }
+    },
+    "dimensions": {
+        "period": "2018-01-01T00:00:00",
+        "entity": "lei:FAKE0012345678901274",
+        "unit": "iso4217:EUR"
+    }
+}

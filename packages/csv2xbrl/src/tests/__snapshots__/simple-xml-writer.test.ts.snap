@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`XMLWriter should escape special characters 1`] = `
+"<?xml version="1.0" encoding="UTF-8"?>
+<root>a &gt; b</root>
+"
+`;
+
+exports[`XMLWriter should write a simple XML document 1`] = `
+"<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<child>
+		text
+	</child>
+</root>
+"
+`;
+
+exports[`XMLWriter should write a simple XML document with attributes 1`] = `
+"<?xml version="1.0" encoding="UTF-8"?>
+<root
+	attr1="value1"
+	attr2="value2">
+</root>
+"
+`;
+
+exports[`XMLWriter should write a simple XML document with text node in the same line 1`] = `
+"<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<child>text</child>
+</root>
+"
+`;

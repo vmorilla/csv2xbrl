@@ -1,0 +1,55 @@
+{
+    "documentInfo": {
+        "documentType": "https://xbrl.org/2021/xbrl-csv",
+        "namespaces": {
+            "eg": "http://example.com/xbrl-csv/taxonomy",
+            "lei": "http://standards.iso.org/iso/17442",
+            "iso4217": "http://www.xbrl.org/2003/iso4217"
+        },
+        "linkTypes": {
+        "footnote": "http://www.xbrl.org/2003/arcrole/fact-footnote"
+        },
+        "linkGroups":{
+        "-": "http://www.xbrl.org/2003/role/link"
+        },
+        "taxonomy": [
+            "http://example.com/xbrl-csv/taxonomy.xsd"
+        ]
+    },
+    "tableTemplates": {
+        "country_exposure_template": {
+            "columns": {
+                "country": {},
+                "credit_exposure": {
+                    "dimensions": {
+                        "concept": "eg:CreditExposure",
+                        "eg:country": "$country"
+                    }
+                },
+                "remarks": {
+                    "dimensions": {
+                        "concept": "xbrl:note"
+                    }
+                }
+            }
+        }
+    },
+    "tables": {
+        "country_exposure_table": {
+            "template": "country_exposure_template",
+            "url": "table13-data-facts.csv"
+        }
+    },
+    "dimensions": {
+        "period": "2019-01-01T00:00:00",
+        "unit": "iso4217:EUR",
+        "entity": "lei:FAKE0012345678901274"
+    },
+    "links": {
+        "footnote": {
+            "-": {
+                "table13_data.5.credit_exposure": [ "table13_data.5.remarks" ]
+            }
+        }
+    }
+}

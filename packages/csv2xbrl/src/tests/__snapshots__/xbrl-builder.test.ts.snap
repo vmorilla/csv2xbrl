@@ -1,0 +1,218 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`XbrlBuilder adds a fact with a typed dimension 1`] = `
+"<?xml version="1.0" encoding="UTF-8"?>
+<xbrl
+	xmlns="http://www.xbrl.org/2003/instance"
+	xmlns:acme="acme.org/taxonomy"
+	xmlns:link="http://www.xbrl.org/2003/linkbase"
+	xmlns:xbrldi="http://xbrl.org/2006/xbrldi"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<context id="c1">
+		<entity>
+			<identifier scheme="http://iso.com/lei">FAKELEI</identifier>
+		</entity>
+		<period>
+			<instant>2020-01-01</instant>
+		</period>
+		<scenario>
+			<xbrldi:typedMember dimension="acme:dim">
+				<acme:LE>TyuepedVal</acme:LE>
+			</xbrldi:typedMember>
+		</scenario>
+	</context>
+	<acme:Sales contextRef="c1">Hello World</acme:Sales>
+</xbrl>
+"
+`;
+
+exports[`XbrlBuilder adds a fact with an explicit dimension dimension 1`] = `
+"<?xml version="1.0" encoding="UTF-8"?>
+<xbrl
+	xmlns="http://www.xbrl.org/2003/instance"
+	xmlns:acme="acme.org/taxonomy"
+	xmlns:link="http://www.xbrl.org/2003/linkbase"
+	xmlns:xbrldi="http://xbrl.org/2006/xbrldi"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<context id="c1">
+		<entity>
+			<identifier scheme="http://iso.com/lei">FAKELEI</identifier>
+		</entity>
+		<period>
+			<instant>2020-01-01</instant>
+		</period>
+		<scenario>
+			<xbrldi:explicitMember dimension="acme:dim">acme:explicit</xbrldi:explicitMember>
+		</scenario>
+	</context>
+	<acme:Sales contextRef="c1">Hello World</acme:Sales>
+</xbrl>
+"
+`;
+
+exports[`XbrlBuilder adds a nonNumeric fact with a simple context of duration type 1`] = `
+"<?xml version="1.0" encoding="UTF-8"?>
+<xbrl
+	xmlns="http://www.xbrl.org/2003/instance"
+	xmlns:acme="acme.org/taxonomy"
+	xmlns:link="http://www.xbrl.org/2003/linkbase"
+	xmlns:xbrldi="http://xbrl.org/2006/xbrldi"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<context id="c1">
+		<entity>
+			<identifier scheme="http://iso.com/lei">FAKELEI</identifier>
+		</entity>
+		<period>
+			<startDate>2020-01-01</startDate>
+			<endDate>2020-12-31</endDate>
+		</period>
+	</context>
+	<acme:Sales contextRef="c1">Hello World</acme:Sales>
+</xbrl>
+"
+`;
+
+exports[`XbrlBuilder adds a nonNumeric fact with a simple context of duration type 2`] = `
+"<?xml version="1.0" encoding="UTF-8"?>
+<xbrl
+	xmlns="http://www.xbrl.org/2003/instance"
+	xmlns:acme="acme.org/taxonomy"
+	xmlns:link="http://www.xbrl.org/2003/linkbase"
+	xmlns:xbrldi="http://xbrl.org/2006/xbrldi"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<context id="c1">
+		<entity>
+			<identifier scheme="http://iso.com/lei">FAKELEI</identifier>
+		</entity>
+		<period>
+			<startDate>2020-01-01</startDate>
+			<endDate>2020-12-31</endDate>
+		</period>
+	</context>
+	<acme:Sales contextRef="c1">Hello World</acme:Sales>
+</xbrl>
+"
+`;
+
+exports[`XbrlBuilder adds a nonNumeric fact with a simple context of instant type 1`] = `
+"<?xml version="1.0" encoding="UTF-8"?>
+<xbrl
+	xmlns="http://www.xbrl.org/2003/instance"
+	xmlns:acme="acme.org/taxonomy"
+	xmlns:link="http://www.xbrl.org/2003/linkbase"
+	xmlns:xbrldi="http://xbrl.org/2006/xbrldi"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<context id="c1">
+		<entity>
+			<identifier scheme="http://iso.com/lei">FAKELEI</identifier>
+		</entity>
+		<period>
+			<instant>2020-01-01</instant>
+		</period>
+	</context>
+	<acme:Sales contextRef="c1">Hello World</acme:Sales>
+</xbrl>
+"
+`;
+
+exports[`XbrlBuilder adds a nonNumeric fact with a simple context of instant type 2`] = `
+"<?xml version="1.0" encoding="UTF-8"?>
+<xbrl
+	xmlns="http://www.xbrl.org/2003/instance"
+	xmlns:acme="acme.org/taxonomy"
+	xmlns:link="http://www.xbrl.org/2003/linkbase"
+	xmlns:xbrldi="http://xbrl.org/2006/xbrldi"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<context id="c1">
+		<entity>
+			<identifier scheme="http://iso.com/lei">FAKELEI</identifier>
+		</entity>
+		<period>
+			<instant>2020-01-01</instant>
+		</period>
+	</context>
+	<acme:Sales contextRef="c1">Hello World</acme:Sales>
+</xbrl>
+"
+`;
+
+exports[`XbrlBuilder adds a numeric fact with a simple context of instant type 1`] = `
+"<?xml version="1.0" encoding="UTF-8"?>
+<xbrl
+	xmlns="http://www.xbrl.org/2003/instance"
+	xmlns:acme="acme.org/taxonomy"
+	xmlns:link="http://www.xbrl.org/2003/linkbase"
+	xmlns:xbrldi="http://xbrl.org/2006/xbrldi"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<context id="c1">
+		<entity>
+			<identifier scheme="http://iso.com/lei">FAKELEI</identifier>
+		</entity>
+		<period>
+			<instant>2020-01-01</instant>
+		</period>
+	</context>
+	<unit id="u1">
+		<measure>iso4217:USD</measure>
+	</unit>
+	<acme:Sales contextRef="c1" decimals="2" unitRef="u1">100</acme:Sales>
+</xbrl>
+"
+`;
+
+exports[`XbrlBuilder should create a basic instance with no facts 1`] = `
+"<?xml version="1.0" encoding="UTF-8"?>
+<xbrl
+	xmlns="http://www.xbrl.org/2003/instance"
+	xmlns:link="http://www.xbrl.org/2003/linkbase"
+	xmlns:xbrldi="http://xbrl.org/2006/xbrldi"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+</xbrl>
+"
+`;
+
+exports[`XbrlBuilder should create a basic instance with target schmea but no facts 1`] = `
+"<?xml version="1.0" encoding="UTF-8"?>
+<xbrl
+	xmlns="http://www.xbrl.org/2003/instance"
+	xmlns:link="http://www.xbrl.org/2003/linkbase"
+	xmlns:xbrldi="http://xbrl.org/2006/xbrldi"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<link:schemaRef xlink:href="https://www.acme.org/taxonomy.xsd" />
+</xbrl>
+"
+`;
+
+exports[`XbrlBuilder uses a different prefix if there is a conflict with user defined ones 1`] = `
+"<?xml version="1.0" encoding="UTF-8"?>
+<xbrl
+	xmlns="http://www.xbrl.org/2003/instance"
+	xmlns:link="http://www.xbrl.org/2003/linkbase"
+	xmlns:xbrldi="http://acme.org/xbrldi"
+	xmlns:xbrldi0="http://xbrl.org/2006/xbrldi"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<context id="c1">
+		<entity>
+			<identifier scheme="http://iso.com/lei">FAKELEI</identifier>
+		</entity>
+		<period>
+			<instant>2020-01-01</instant>
+		</period>
+		<scenario>
+			<xbrldi0:explicitMember dimension="xbrldi:dim">xbrldi:exp</xbrldi0:explicitMember>
+		</scenario>
+	</context>
+	<xbrldi:concept contextRef="c1">Hello World</xbrldi:concept>
+</xbrl>
+"
+`;

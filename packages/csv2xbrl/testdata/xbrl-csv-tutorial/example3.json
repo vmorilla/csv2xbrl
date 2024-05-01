@@ -1,0 +1,43 @@
+{
+    "documentInfo": {
+        "documentType": "https://xbrl.org/2021/xbrl-csv",
+        "namespaces": {
+            "eg": "http://example.com/xbrl-csv/taxonomy",
+            "lei": "http://standards.iso.org/iso/17442",
+            "iso4217": "http://www.xbrl.org/2003/iso4217"
+        },
+        "taxonomy": [
+            "http://example.com/xbrl-csv/taxonomy.xsd"
+        ]
+    },
+    "tableTemplates": {
+        "loan_data_template": {
+            "columns": {
+                "loan_id": {},
+                "local_currency": {},
+                "loan_amount_hc": {
+                    "dimensions": {
+                        "unit": "iso4217:EUR"
+                    }
+                },
+                "loan_amount_lc": {
+                    "dimensions": {
+                        "unit": "$local_currency"
+                    }
+                }
+            },
+            "dimensions": {
+                "eg:LoanId": "$loan_id",
+                "concept": "eg:LoanAmount",
+                "period": "2019-01-01T00:00:00",
+                "entity": "lei:FAKE0012345678901274"
+            }
+        }
+    },
+    "tables": {
+        "loan_data_table": {
+            "template": "loan_data_template",
+            "url": "table2-data-facts.csv"
+        }
+    }
+}

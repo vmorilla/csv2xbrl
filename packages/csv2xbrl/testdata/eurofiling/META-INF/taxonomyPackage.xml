@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tp:taxonomyPackage xml:lang="en" xmlns:tp="http://xbrl.org/2016/taxonomy-package"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xbrl.org/2016/taxonomy-package http://www.xbrl.org/2016/taxonomy-package.xsd">
+    <tp:identifier>http://www.eurofiling.info</tp:identifier>
+    <tp:name>Package for Eurofiling official files</tp:name>
+</tp:taxonomyPackage>

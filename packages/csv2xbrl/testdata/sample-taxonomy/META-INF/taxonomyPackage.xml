@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tp:taxonomyPackage xml:lang="en" xmlns:tp="http://xbrl.org/2016/taxonomy-package"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xbrl.org/2016/taxonomy-package http://www.xbrl.org/2016/taxonomy-package.xsd">
+  <tp:identifier>http://example.com/xbrl-csv</tp:identifier> 
+  <tp:name>Example taxonomy for xbrl-csv samples</tp:name>
+  <tp:entryPoints>
+    <tp:entryPoint>
+      <tp:name>Example taxonomy entry point</tp:name>
+      <tp:entryPointDocument href="https://example.com/xbrl-csv/taxonomy.xsd"/>
+    </tp:entryPoint>
+  </tp:entryPoints>
+</tp:taxonomyPackage>

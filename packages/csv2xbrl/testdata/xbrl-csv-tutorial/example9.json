@@ -1,0 +1,45 @@
+{
+    "documentInfo": {
+        "documentType": "https://xbrl.org/2021/xbrl-csv",
+        "namespaces": {
+            "eg": "http://example.com/xbrl-csv/taxonomy",
+            "lei": "http://standards.iso.org/iso/17442",
+            "iso4217": "http://www.xbrl.org/2003/iso4217"
+        },
+        "taxonomy": [
+            "http://example.com/xbrl-csv/taxonomy.xsd"
+        ]
+    },
+    "tableTemplates": {
+        "loan_data_template": {
+            "columns": {
+                "loan_id": {},
+                "loan_amount": {
+                    "dimensions": {
+                        "concept": "eg:LoanAmount"
+                    }
+                },
+                "provision_amount": {
+                    "dimensions": {
+                        "concept": "eg:ProvisionAmount"
+                    }
+                }
+            },
+            "dimensions": {
+                "eg:LoanId": "$loan_id",    
+                "period": "$period@end"
+            }
+        }
+    },
+    "tables": {
+        "loan_data_table": {
+            "template": "loan_data_template",
+            "url": "table9-data-facts.csv"
+        }
+    },
+    "parameterURL": "report_parameters.csv",
+    "dimensions": {
+        "entity": "$entityLEI",
+        "unit": "iso4217:EUR"
+    }
+}

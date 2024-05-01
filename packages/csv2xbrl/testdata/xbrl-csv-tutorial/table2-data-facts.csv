@@ -1,0 +1,4 @@
+loan_id,local_currency,loan_amount_hc,loan_amount_lc
+L9209384832,iso4217:USD,1000,1115
+L12312312123,iso4217:GBP,1100,950
+L2393823489,iso4217:JPY,800,96800

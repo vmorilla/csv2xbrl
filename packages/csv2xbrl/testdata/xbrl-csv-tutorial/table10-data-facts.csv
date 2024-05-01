@@ -1,0 +1,7 @@
+country,concept,credit_institutions,non_financial_corporations
+eg:FR,eg:LoanAmount,100,50
+eg:FR,eg:FinancialGuarantees ,25,10
+eg:FR,eg:investment_exposure,40,15
+eg:US,eg:LoanAmount,250,120
+eg:US,eg:FinancialGuarantees ,75,40
+eg:US,eg:investment_exposure,60,25

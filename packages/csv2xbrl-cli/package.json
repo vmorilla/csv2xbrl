@@ -1,0 +1,25 @@
+{
+    "name": "csv2xbrl-cli",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "tsup src/index.ts --clean --minify"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@commander-js/extra-typings": "^12.0.1",
+        "@types/node": "^20.12.7",
+        "ts-node": "^10.9.2",
+        "tsup": "^8.0.2",
+        "typescript": "^5.4.5"
+    },
+    "dependencies": {
+        "commander": "^12.0.0",
+        "csv2xbrl": "^0.3.1",
+        "install": "^0.13.0"
+    }
+}

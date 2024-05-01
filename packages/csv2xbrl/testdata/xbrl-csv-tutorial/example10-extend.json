@@ -1,0 +1,24 @@
+{
+    "documentInfo": {
+        "documentType": "https://xbrl.org/2021/xbrl-csv",
+        "extends": [
+            "example10.json"
+        ]
+    },
+    "tables": {
+        "loan_data_table_FR": {
+            "template": "loan_data_template",
+            "url": "table10-FR-data-facts.csv",
+            "parameters": {
+                "c1": "eg:FR"
+            }
+        },
+        "loan_data_table_US": {
+            "template": "loan_data_template",
+            "url": "table10-US-data-facts.csv",
+            "parameters": {
+                "c1": "eg:US"
+            }
+        }
+    }
+}

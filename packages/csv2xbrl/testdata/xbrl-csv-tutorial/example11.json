@@ -1,0 +1,73 @@
+{
+    "documentInfo": {
+        "documentType": "https://xbrl.org/2021/xbrl-csv",
+        "namespaces": {
+            "eg": "http://example.com/xbrl-csv/taxonomy",
+            "lei": "http://standards.iso.org/iso/17442",
+            "iso4217": "http://www.xbrl.org/2003/iso4217"
+        },
+        "taxonomy": [
+            "http://example.com/xbrl-csv/taxonomy.xsd"
+        ]
+    },
+    "tableTemplates": {
+        "capital_adequacy_template": {
+            "columns": {
+                "item": {
+                    "propertyGroups": {
+                        "d1": {
+                            "dimensions": {
+                                "concept": "eg:CETCapitalRatio"
+                            }
+                        },
+                        "d2": {
+                            "dimensions": {
+                                "concept": "eg:Tier1CapitalRatio"
+                            }
+                        },
+                        "d3": {
+                            "dimensions": {
+                                "concept": "eg:TotalCapitalRatio"
+                            }
+                        },
+                        "d4": {
+                            "dimensions": {
+                                "concept": "eg:SurplusDeficitTier1Capital",
+                                "unit": "iso4217:EUR"
+                            }
+                        },
+                        "d5": {
+                            "dimensions": {
+                                "concept": "eg:SurplusDeficitCET1Capital",
+                                "unit": "iso4217:EUR"
+                            }
+                        },
+                        "d6": {
+                            "dimensions": {
+                                "concept": "eg:SurplusDeficitTotalCapital",
+                                "unit": "iso4217:EUR"
+                            }
+                        }
+                    }
+                },
+                "amount": {
+                    "dimensions": {
+                        "period": "2018-01-01T00:00:00"
+                    },
+                    "propertiesFrom": [
+                        "item"
+                    ]
+                }
+            }
+        }
+    },
+    "tables": {
+        "capital_adequacy_data": {
+            "template": "capital_adequacy_template",
+            "url": "table11-data-facts.csv"
+        }
+    },
+    "dimensions": {
+        "entity": "lei:FAKE0012345678901274"
+    }
+}
