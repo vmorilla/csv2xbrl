@@ -8,7 +8,7 @@
     },
     "scripts": {
         "test": "echo \"No tests implemented\"",
-        "build": "tsup src/index.ts --clean --minify"
+        "build": "tsup src/index.ts --clean"
     },
     "keywords": [],
     "author": "",

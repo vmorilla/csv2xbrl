@@ -1,0 +1,26 @@
+{
+    "folders": [
+        {
+            "name": "root",
+            "path": "../"
+        },
+        {
+            "name": "packages/csv2xbrl",
+            "path": "../packages/csv2xbrl"
+        },
+        {
+            "name": "packages/csv2xbrl-cli",
+            "path": "../packages/csv2xbrl-cli"
+        },
+    ],
+    "settings": {
+        "files.exclude": {
+            "node_modules/": true,
+            "packages/": true
+        },
+        "jest.disabledWorkspaceFolders": [
+            "root",
+            "packages/csv2xbrl-cli"
+        ]
+    }
+}
