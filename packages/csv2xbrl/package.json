@@ -23,7 +23,7 @@
         "test": "jest",
         "profile": "node -r ts-node/register --prof src/index.ts",
         "taxpackages": "cd testdata && zip -r sample-taxonomy.zip sample-taxonomy/ && zip -r xbrl-org.zip xbrl-org && zip -r eurofiling.zip eurofiling",
-        "samples": "csv2xbrl -z testdata/sample-taxonomy.zip,testdata/xbrl-org.zip testdata/xbrl-csv-tutorial/*.json"
+        "samples": "csv2xbrl -p testdata/sample-taxonomy.zip,testdata/xbrl-org.zip testdata/xbrl-csv-tutorial/*.json"
     },
     "keywords": [
         "xBRL",
