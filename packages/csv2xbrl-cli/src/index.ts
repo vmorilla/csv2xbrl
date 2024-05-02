@@ -8,7 +8,7 @@ function parseArgs() {
         .name("csv2xbrl")
         .description("JSON files to convert to xBRL")
         .argument("<jsonFiles...>", "JSON files to convert to xBRL")
-        .option("-z, --package <package>", "Taxonomy package zip files to load")
+        .option("-p, --package <package>", "Taxonomy package zip files to load")
         .option("-o, --output <output>", "Output file. Standard output if - is specified. If not specified, "
             + "it uses the same name of the input file, but with the .xbrl extension.")
         .action((args, options, logger) => {
