@@ -12,7 +12,7 @@ function parseArgs() {
         .option("-o, --output <output>", "Output file. Standard output if - is specified. If not specified, "
             + "it uses the same name of the input file, but with the .xbrl extension.")
         .action((args, options, logger) => {
-            if (args.length > 1 || options.output) {
+            if (args.length > 1 && options.output) {
                 logger.error("Output file can only be specified when converting a single JSON file.");
                 process.exit(1);
             }
