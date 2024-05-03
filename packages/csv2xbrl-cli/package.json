@@ -1,6 +1,6 @@
 {
     "name": "csv2xbrl-cli",
-    "version": "0.3.7",
+    "version": "0.3.8",
     "description": "A command-line tool to transform xBRL-CSV files into xBRL-XML instance documents",
     "repository": {
         "type": "git",
