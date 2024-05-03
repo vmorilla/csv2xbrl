@@ -57,6 +57,7 @@
     "dependencies": {
         "axios": "^1.6.8",
         "csv-parser": "^3.0.0",
+        "csv2xbrl": "^0.3.6",
         "luxon": "^3.4.4",
         "strip-bom-stream": "^5.0.0",
         "xmldom": "^0.6.0",
