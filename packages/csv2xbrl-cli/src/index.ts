@@ -2,27 +2,25 @@
 import { csv2xbrl, loadPackages } from "csv2xbrl";
 import { program } from '@commander-js/extra-typings';
 import fs from "fs";
+import { version } from "../package.json";
 
-function parseArgs() {
-    return program
+async function main() {
+    const options = program
         .name("csv2xbrl")
-        .description("JSON files to convert to xBRL")
+        .version(version)
+        .description("Transforms xBRL-CSV files into xBRL-XML instance documents")
         .option("-p, --packages <package...>", "Taxonomy package zip files to load")
         .option("-o, --output <output>", "Output file. Standard output if - is specified. If not specified, "
-            + "it uses the same name of the input file, but with the .xbrl extension.")
-        .requiredOption("-j, --json <json...>", "JSON files to convert to xBRL")
+            + "it uses the same name as the metadata JSON file, but with the .xbrl extension.")
+        .requiredOption("-j, --json <json...>", "CSV JSON files with the metadata")
         .action((options, logger) => {
             if (options.json.length > 1 && options.output) {
                 logger.error("Output file can only be specified when converting a single JSON file.");
                 process.exit(1);
             }
-        });
-}
-
-
-async function main() {
-    const command = parseArgs();
-    const options = command.opts();
+        }).showHelpAfterError()
+        .parse()
+        .opts();
 
     const resolver = await loadPackages(options.packages || []);
     for (const jsonFile of options.json) {
