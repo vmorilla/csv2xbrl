@@ -2,7 +2,6 @@
 import { csv2xbrl, loadPackages } from "csv2xbrl";
 import { program } from '@commander-js/extra-typings';
 import fs from "fs";
-import { exit } from "process";
 
 function parseArgs() {
     return program
