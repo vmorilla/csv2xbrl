@@ -1,7 +1,12 @@
 {
     "name": "csv2xbrl",
     "version": "0.3.5",
-    "description": "A script to conver xBRL-CSV files to xBRL-XML files",
+    "description": "A library to transform xBRL-CSV files into xBRL-XML instance documents",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/vmorilla/csv2xbrl.git"
+    },
+    "homepage": "https://github.com/vmorilla/csv2xbrl/tree/master/packages/csv2xbrl",
     "files": [
         "dist",
         "package.json",
