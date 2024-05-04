@@ -1,6 +1,6 @@
 # CSV2XBRL CLI
 <p>
-    <img src="https://img.shields.io/badge/status-Work%20in%20Progress-orange" alt="Work in Progress" />
+    <img src="https://img.shields.io/npm/v/csv2xbrl-cli" alt="Version" />
     <img src="https://img.shields.io/badge/license-MIT-purple.svg" alt="MIT license" />
 </p>
 
